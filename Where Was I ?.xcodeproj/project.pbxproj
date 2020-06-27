@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E23BBEC424A7D67600D9D8FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BBEC324A7D67600D9D8FE /* AppDelegate.swift */; };
-		E23BBEC624A7D67600D9D8FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BBEC524A7D67600D9D8FE /* SceneDelegate.swift */; };
 		E23BBEC824A7D67600D9D8FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23BBEC724A7D67600D9D8FE /* ViewController.swift */; };
 		E23BBECB24A7D67600D9D8FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23BBEC924A7D67600D9D8FE /* Main.storyboard */; };
 		E23BBECD24A7D68700D9D8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E23BBECC24A7D68700D9D8FE /* Assets.xcassets */; };
 		E23BBED024A7D68700D9D8FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23BBECE24A7D68700D9D8FE /* LaunchScreen.storyboard */; };
+		E23BBED924A7DBD900D9D8FE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23BBED824A7DBD800D9D8FE /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E23BBEC024A7D67500D9D8FE /* Where Was I ?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where Was I ?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23BBEC324A7D67600D9D8FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E23BBEC524A7D67600D9D8FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E23BBEC724A7D67600D9D8FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E23BBECA24A7D67600D9D8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E23BBECC24A7D68700D9D8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E23BBECF24A7D68700D9D8FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E23BBED124A7D68700D9D8FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E23BBED824A7DBD800D9D8FE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23BBED924A7DBD900D9D8FE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +43,7 @@
 			children = (
 				E23BBEC224A7D67500D9D8FE /* Where Was I ? */,
 				E23BBEC124A7D67500D9D8FE /* Products */,
+				E23BBED724A7DBD800D9D8FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				E23BBEC324A7D67600D9D8FE /* AppDelegate.swift */,
-				E23BBEC524A7D67600D9D8FE /* SceneDelegate.swift */,
 				E23BBEC724A7D67600D9D8FE /* ViewController.swift */,
 				E23BBEC924A7D67600D9D8FE /* Main.storyboard */,
 				E23BBECC24A7D68700D9D8FE /* Assets.xcassets */,
@@ -65,6 +66,14 @@
 				E23BBED124A7D68700D9D8FE /* Info.plist */,
 			);
 			path = "Where Was I ?";
+			sourceTree = "<group>";
+		};
+		E23BBED724A7DBD800D9D8FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E23BBED824A7DBD800D9D8FE /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +149,6 @@
 			files = (
 				E23BBEC824A7D67600D9D8FE /* ViewController.swift in Sources */,
 				E23BBEC424A7D67600D9D8FE /* AppDelegate.swift in Sources */,
-				E23BBEC624A7D67600D9D8FE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
