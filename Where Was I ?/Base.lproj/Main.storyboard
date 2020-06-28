@@ -17,14 +17,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="exS-ZN-Tha">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4b-Ho-mM3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Where Was I ?" largeTitleDisplayMode="always" id="oTt-uj-dJm">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DAu-2j-N3l">
+                                            <connections>
+                                                <action selector="saveButtonClicked:" destination="BYZ-38-t0r" id="dLT-QP-hbs"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="o4b-Ho-mM3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1Uk-jG-Rxv"/>
                             <constraint firstItem="exS-ZN-Tha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="897-S3-Qhw"/>
-                            <constraint firstItem="exS-ZN-Tha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MoM-5v-bdO"/>
+                            <constraint firstItem="o4b-Ho-mM3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8wx-lu-FYz"/>
+                            <constraint firstItem="exS-ZN-Tha" firstAttribute="top" secondItem="o4b-Ho-mM3" secondAttribute="bottom" id="MQ3-Td-Ret"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="exS-ZN-Tha" secondAttribute="trailing" id="PnP-Vm-Omb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o4b-Ho-mM3" secondAttribute="trailing" id="TS8-Gv-EJh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="exS-ZN-Tha" secondAttribute="bottom" id="ztn-r8-77B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -35,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="97"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="96.428571428571431"/>
         </scene>
     </scenes>
 </document>
